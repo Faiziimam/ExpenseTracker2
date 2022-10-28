@@ -1,4 +1,6 @@
 # ExpenseTracker2
+Reference : React - The Complete Guide (incl Hooks, React Router, Redux)
+
 This is a project in which I'm creating a Expense Tracker Application 
 
 Things I've learnt so far are : 

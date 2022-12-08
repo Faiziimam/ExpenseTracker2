@@ -76,8 +76,8 @@ const ExpenseForm = ({ onSaveExpenseData }) => {
           <label>Date</label>
           <input
             type="date"
-            min="2019-01-01"
-            max="2022-12-31"
+            min="2022-12-08"
+            max="2030-12-31"
             onChange={dateChangeHandler}
             // Two Way data binding is very important concept when we are using form as this helps
             // in overriding the previous values with new values or an empty string.

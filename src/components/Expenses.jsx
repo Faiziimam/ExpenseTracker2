@@ -3,7 +3,9 @@ import Card from "./Card";
 import ExpenseItem from "./ExpenseItem";
 import ExpensesFilter from "./ExpensesFilter";
 import ExpensesList from "./ExpensesList";
+import ExpensesChart from "./ExpensesChart";
 import "./expenses.css";
+
 export default function Expenses({ expenses }) {
   const [saveYear, setSaveYear] = useState("2022");
   const yearData = (yearDate) => {
@@ -18,6 +20,7 @@ export default function Expenses({ expenses }) {
   return (
     <Card className="expenses">
       <ExpensesFilter defaultYear={saveYear} onSaveYearData={yearData} />
+      <ExpensesChart expenses={fillteredExpenses} />
       <ExpensesList filterData={fillteredExpenses} />
     </Card>
   );
